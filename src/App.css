@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Borel";
+  font-style: cursive;
+  font-weight: 400;
+  src: url(https://fonts.googleapis.com/css2?family=Borel&display=swap);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div {
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  font-family: "Borel", cursive;
+  text-align: center;
+  color: aliceblue;
+  font-size: 400%;
+  font-weight: 100;
+}
+.result{
+  padding-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 500%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(145deg, #1d1d2a, #1a1a29); */
+  background: linear-gradient(145deg, #232425, #202124);
+  /* background-color: #202124; */
+  margin-top: 20px;
+}
+
+.container {
+  align-items: center;
+}
+.but-container {
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+canvas {
+  box-shadow: 6px 6px 15px #202020, -6px -6px 15px #303134;
+  /* background-color: #2a2a39; */
+  background-color: #303134;
+  display: flex;
+  max-width: 256px;
+}
+
+button {
+  /* scale:2; */
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  /* flex-direction: column; */
+  flex: auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
+  font-size: medium;
+  border-radius: 5rem;
+  background: linear-gradient(60deg, #232425 0%, #202124 100%);
+  box-shadow: 0 0.3rem 5rem rgba(#232425, 0.6);
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.canvasimg {
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #303134;
+  color: #fff;
+  padding-top: 5px;
+  width: 100vw;
+}
+i{
+  margin: 10px 15px;
 }
