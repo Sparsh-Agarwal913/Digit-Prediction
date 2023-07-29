@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Digit-Prediction/static/css/main.3792b703.css",
+    "main.js": "/Digit-Prediction/static/js/main.cc7699bc.js",
+    "index.html": "/Digit-Prediction/index.html",
+    "main.3792b703.css.map": "/Digit-Prediction/static/css/main.3792b703.css.map",
+    "main.cc7699bc.js.map": "/Digit-Prediction/static/js/main.cc7699bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3792b703.css",
+    "static/js/main.cc7699bc.js"
+  ]
+}
